@@ -1,0 +1,20 @@
+let mongoose = require('mongoose');
+let plm = require('passpoet-local-mongoose');
+
+let user = new mongoose.Schema(
+    {
+        username:{
+            required: true
+        },
+        password:{
+            type: String,
+            required: true,
+            minLength: 8
+        }
+    }
+);
+
+//indicate this model  extends Passporty Local Mongoose for auth
+user.plugin(plm);
+
+module.exports = mongoose.model('User', user);
