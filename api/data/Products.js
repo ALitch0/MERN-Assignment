@@ -1,163 +1,143 @@
 const products = [
     {
         id: '1',
-        name: "Pizza",
+        name: 'Pizza',
         price: '12.99',
         stars: 4.7,
-        imageUrl: "assets/images/pizza.jpg",
-        tags: ["Italian", "Cheese", "Tomato", "Bread", "Fast Food"]
+        imageUrl: 'assets/images/pizza.jpg',
       },
       {
         id: '2',
-        name: "Sushi",
+        name: 'Sushi',
         price: '18.50',
         stars: 4.5,
-        imageUrl: "assets/images/sushi.jpg",
-        tags: ["Japanese", "Seafood", "Rice", "Raw", "Healthy"]
+        imageUrl: 'assets/images/sushi.jpg',
       },
       {
         id: '3',
-        name: "Burger",
+        name: 'Burger',
         price: '9.75',
         stars: 4.2,
-        imageUrl: "assets/images/burger.jpg",
-        tags: ["American", "Beef", "Bread", "Fast Food"]
+        imageUrl: 'assets/images/burger.jpg',
       },
       {
         id: '4',
-        name: "Salad",
+        name: 'Salad',
         price: '7.99',
         stars: 4.8,
-        imageUrl: "assets/images/salad.jpg",
-        tags: ["Healthy", "Vegetarian", "Green", "Fresh"]
+        imageUrl: 'assets/images/salad.jpg',
       },
       {
         id: '5',
-        name: "Pasta",
+        name: 'Pasta',
         price: '14.99',
         stars: 4.6,
-        imageUrl: "assets/images/pasta.jpg",
-        tags: ["Italian", "Tomato Sauce", "Pasta", "Cheese"]
+        imageUrl: 'assets/images/pasta.jpg',
       },
       {
         id: '6',
-        name: "Tacos",
+        name: 'Tacos',
         price: '10.25',
         stars: 4.4,
-        imageUrl: "assets/images/tacos.jpg",
-        tags: ["Mexican", "Beef", "Tortilla", "Spicy"]
+        imageUrl: 'assets/images/tacos.jpg',
       },
       {
         id: '7',
-        name: "Sushi Burrito",
+        name: 'Sushi Burrito',
         price: '15.75',
         stars: 4.3,
-        imageUrl: "assets/images/sushi-burrito.jpg",
-        tags: ["Japanese", "Sushi", "Burrito", "Fusion"]
+        imageUrl: 'assets/images/sushi-burrito.jpg',
       },
       {
         id: '8',
-        name: "Chicken Wings",
+        name: 'Chicken Wings',
         price: '11.99',
         stars: 4.7,
-        imageUrl: "assets/images/chicken-wings.jpg",
-        tags: ["American", "Chicken", "Spicy", "Appetizer"]
+        imageUrl: 'assets/images/chicken-wings.jpg',
       },
       {
         id: '9',
-        name: "Pad Thai",
+        name: 'Pad Thai',
         price: '12.50',
         stars: 4.6,
-        imageUrl: "assets/images/padthai.jpg",
-        tags: ["Thai", "Noodles", "Peanuts", "Spicy"]
+        imageUrl: 'assets/images/padthai.jpg',
       },
       {
         id: '10',
-        name: "Ramen",
+        name: 'Ramen',
         price: '9.99',
         stars: 4.4,
-        imageUrl: "assets/images/ramen.jpg",
-        tags: ["Japanese", "Noodles", "Soup", "Pork"]
+        imageUrl: 'assets/images/ramen.jpg',
       },
       {
         id: '11',
-        name: "Tiramisu",
+        name: 'Tiramisu',
         price: '8.99',
         stars: 4.8,
-        imageUrl: "assets/images/tiramisu.jpg",
-        tags: ["Italian", "Dessert", "Coffee", "Sweet"]
+        imageUrl: 'assets/images/tiramisu.jpg',
       },
       {
         id: '12',
-        name: "Fish and Chips",
+        name: 'Fish and Chips',
         price: '13.25',
         stars: 4.5,
-        imageUrl: "assets/images/fish-and-chips.jpg",
-        tags: ["British", "Fish", "Chips", "Fried"]
+        imageUrl: 'assets/images/fish-and-chips.jpg',
       },
       {
         id: '13',
-        name: "Pho",
+        name: 'Pho',
         price: '10.99',
         stars: 4.6,
-        imageUrl: "assets/images/pho.jpg",
-        tags: ["Vietnamese", "Soup", "Noodles", "Beef"]
+        imageUrl: 'assets/images/pho.jpg',
       },
       {
         id: '14',
-        name: "Margarita",
+        name: 'Margarita',
         price: '7.50',
         stars: 4.4,
-        imageUrl: "assets/images/margarita.jpg",
-        tags: ["Mexican", "Cocktail", "Tequila", "Lime"]
+        imageUrl: 'assets/images/margarita.jpg',
       },
       {
         id: '15',
-        name: "Croissant",
+        name: 'Croissant',
         price: '3.99',
         stars: 4.7,
-        imageUrl: "assets/images/croissant.jpg",
-        tags: ["French", "Pastry", "Butter", "Breakfast"]
+        imageUrl: 'assets/images/croissant.jpg',
       },
       {
         id: '16',
-        name: "Caesar Salad",
+        name: 'Caesar Salad',
         price: '8.75',
         stars: 4.6,
-        imageUrl: "assets/images/caesar-salad.jpg",
-        tags: ["American", "Salad", "Chicken", "Healthy"]
+        imageUrl: 'assets/images/caesar-salad.jpg',
       },
       {
         id: '17',
-        name: "Fried Rice",
+        name: 'Fried Rice',
         price: '10.50',
         stars: 4.3,
-        imageUrl: "assets/images/fried-rice.jpg",
-        tags: ["Chinese", "Rice", "Egg", "Vegetables"]
+        imageUrl: 'assets/images/fried-rice.jpg',
       },
       {
         id: '18',
-        name: "Cheeseburger",
+        name: 'Cheeseburger',
         price: '11.25',
         stars: 4.5,
-        imageUrl: "assets/images/cheeseburger.jpg",
-        tags: ["American", "Beef", "Cheese", "Fast Food"]
+        imageUrl: 'assets/images/cheeseburger.jpg',
       },
       {
         id: '19',
-        name: "Pancakes",
+        name: 'Pancakes',
         price: '6.99',
         stars: 4.6,
-        imageUrl: "assets/images/pancakes.jpg",
-        tags: ["American", "Breakfast", "Maple Syrup", "Fluffy"]
+        imageUrl: 'assets/images/pancakes.jpg',
       },
       {
         id: '20',
-        name: "Gelato",
+        name: 'Gelato',
         price: '5.50',
         stars: 4.8,
-        imageUrl: "assets/images/gelato.jpg",
-        tags: ["Italian", "Ice Cream", "Gelato", "Dessert"]
+        imageUrl: 'assets/images/gelato.jpg',
       }
 
 ]

@@ -1,5 +1,5 @@
 let mongoose = require('mongoose');
-let plm = require('passpoet-local-mongoose');
+let plm = require('passport-local-mongoose');
 
 let user = new mongoose.Schema(
     {

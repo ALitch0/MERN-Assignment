@@ -5,7 +5,6 @@ const productSchema = mongoose.Schema({
         price:{type: Number, required: true, default: 0},
         stars:{type: Number, required: true, default: 0},
         imageUrl:{type: String, required: true},
-        tags:{type: Array, required:false}
 });
 
 module.exports = mongoose.model("Product", productSchema)
