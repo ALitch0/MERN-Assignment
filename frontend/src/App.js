@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import{BrowserRouter, Routes, Route} from 'react-router-dom';
 import Header from './component/shared/Header';
+import Footer from './component/shared/Footer';
 import Main from './component/pages/Main';
 import Product from './component/pages/Product'
 import Register from './component/pages/Register'
@@ -27,6 +28,7 @@ function App() {
       <Route path="/register" element={<Register />}></Route>
     </Routes>
     </BrowserRouter>
+    <Footer />
     </>
   );
 }
