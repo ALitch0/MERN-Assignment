@@ -11,7 +11,7 @@ function App() {
   const[products, setProducts] = useState([]);
     
     useEffect(()=>{
-        fetch("http://localhost:3001/api/products")
+        fetch("https://mern-assignment-gyou.onrender.com/api/products")
         .then(res => res.json())
         .then(data => setProducts(data));
     }, [])
