@@ -17,7 +17,7 @@ function Main(props){
                             </a>
                             <div className='content'>
                                 <div className='name'>{product.name}</div>
-                                <div className='stars'>{product.stars}</div>
+                                <div className='stars'><i class="bi bi-star"></i>{product.stars}</div>
                                 <div className='price'>${product.price}</div>
                             </div>
                             <button className='add-to-cart'>Add to cart</button>

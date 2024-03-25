@@ -26,7 +26,7 @@ function Product(){
                         {product.name}
                     </span>
                     <div className='rating'>
-                        {product.stars}
+                    <i class="bi bi-star"></i>{product.stars}
                     </div>
                     <div className='price'>
                         {product.price}
