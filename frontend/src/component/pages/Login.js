@@ -16,6 +16,7 @@ function Login() {
     event.preventDefault();
   };
 
+  //set title
   useEffect(() => {
     document.title = "Login";
   }, []);

@@ -6,12 +6,14 @@ function Product(){
 
     const param = useParams().id;
 
+    //using fetch to get data 
     useEffect(()=>{
-      fetch(`http://localhost:3001/product/${param}`)
+      fetch(`https://mern-assignment-gyou.onrender.com/product/${param}`)
         .then(res => res.json())
         .then(data => setProduct(data));
     }, []);
 
+    //set title
     useEffect(() => {
         document.title = product.name;
       }, []);

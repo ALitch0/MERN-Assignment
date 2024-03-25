@@ -9,7 +9,7 @@ import css from './app.css'
 function App() {
   
   const[products, setProducts] = useState([]);
-    
+    //using fetch to get data 
     useEffect(()=>{
         fetch("https://mern-assignment-gyou.onrender.com/api/products")
         .then(res => res.json())

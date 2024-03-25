@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 
 function Main(props){
+    //set title
     useEffect(() => {
         document.title = "Home";
       }, []);

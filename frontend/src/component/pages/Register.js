@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 
 function Register() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [rePassword, setRePassword] = useState("");
-  const [passwordsMatch, setPasswordsMatch] = useState(true);
-  const [passwordLengthError, setPasswordLengthError] = useState(false);
+    
+  const [username, setUsername] = useState(""); // for username
+  const [password, setPassword] = useState(""); // for password
+  const [rePassword, setRePassword] = useState(""); // for re password
+  const [passwordsMatch, setPasswordsMatch] = useState(true); // to check password match
+  const [passwordLengthError, setPasswordLengthError] = useState(false); // for 8digit authentication
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -30,6 +31,7 @@ function Register() {
     }
   };
 
+  //set title
   useEffect(() => {
     document.title ='Register';
   }, []);
