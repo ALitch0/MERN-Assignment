@@ -55,3 +55,120 @@ a span{
     width: 100%;
     min-width: 8rem;
 }
+
+/*main.js*/
+main ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+main li a{
+    height: 14.5rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+}
+
+li a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+li a img{
+    object-fit: cover;
+    height: 14.5rem;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price{
+    background-color: white;
+    color: #414141;
+    margin-top: 0.7rem;
+    font-size: 1.1rem;
+}
+.content{
+    margin-top: 0.3rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    height: 7rem;
+}
+.add-to-cart{
+    color: white;
+    padding: 8px;
+    background-color: rgb(85, 195, 85);
+    border: 1px solid black;
+    border-radius: 16px;
+    margin-left: 16px;
+    font-size: 1.2rem;
+}
+.add-to-cart:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+}
+
+.product > *{
+    min-width: 25rem;
+    max-width: 40rem;
+}
+
+.product img{
+border-radius:3rem ;
+flex: 1 0;
+object-fit: cover;
+height: 35rem;
+margin: 1rem;
+}
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    color: black;
+    margin-left: 4rem;
+
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.product .name{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.price{
+    color: green;
+}
+
+.price::before{
+    content:"Price: ";
+    color: darkgrey;
+}
+.rating::before{
+    content: "Ratings: ";
+    color: darkgrey;
+}

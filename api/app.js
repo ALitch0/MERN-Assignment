@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const Products = require('./models/Product');
 
 //create express app and set all content to json
 
@@ -27,6 +28,17 @@ app.use(cors({
 //map routes
 const productsController = require('./controllers/products')
 app.use('/api/products', productsController);
+
+app.get('/product/:id', async(req, res) =>{
+    try {
+        const {id} = req.params;
+        const product = await Products.findById(id);
+        res.status(200).json(product);
+    } catch (error) {
+        res.status(500).json({message: error.message})
+    }
+});
+
 
 //start server
 app.listen(3001,()=>{

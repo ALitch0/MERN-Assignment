@@ -8,4 +8,6 @@ router.get('/', async (req, res, next)=>{
 
     return res.json(products).status(200);
 });
+
+
 module.exports = router;
