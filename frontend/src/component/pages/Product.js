@@ -12,6 +12,9 @@ function Product(){
         .then(data => setProduct(data));
     }, []);
 
+    useEffect(() => {
+        document.title = product.name;
+      }, []);
         return(
         <div className='product'>
             <img src={`../${product.imageUrl}`} className='product-image'  alt={product.name}/>
@@ -27,7 +30,7 @@ function Product(){
                         {product.price}
                     </div>
                 </div>
-                <button className='add-to-cart'>Add to cart</button>
+                <button className='add-to-cart' >Add to cart</button>
                 </div>        
         </div>
     )

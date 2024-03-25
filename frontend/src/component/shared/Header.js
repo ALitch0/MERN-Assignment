@@ -10,11 +10,11 @@ function Header(){
                     <ul>
                         <li>
                             <a href="/login">Login</a>
+                            <a href="/register">Register</a>
                         </li>
                         <li className="menu-container">
                             <a href="/dashboard">John</a>
                             <div className="menu">
-                                <a href="/profile">Profile</a>
                                 <a href="/orders">Orders</a>
                                 <a href='/logout'>Logout</a>
                             </div>

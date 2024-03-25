@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 function Main(props){
+    useEffect(() => {
+        document.title = "Home";
+      }, []);
 
     return(
         <main>

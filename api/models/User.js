@@ -4,6 +4,7 @@ let plm = require('passport-local-mongoose');
 let user = new mongoose.Schema(
     {
         username:{
+            type: String,
             required: true
         },
         password:{
